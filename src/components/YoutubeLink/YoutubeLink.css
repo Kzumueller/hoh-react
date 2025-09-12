@@ -1,0 +1,13 @@
+.youtube, .youtube:visited {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: red;
+    text-decoration: none;
+    width: fit-content;
+    outline: none;
+}
+
+.youtube:hover {
+    color: darkred;
+}

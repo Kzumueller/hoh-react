@@ -1,0 +1,18 @@
+.table {
+    display: block;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    margin: 20px 0 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table__header th {
+    border: 1px solid #efefef;
+}
+
+.table__cell {
+    font-size: .8rem;
+    padding: 5px;
+    border: 1px solid #efefef;
+}
