@@ -8,7 +8,9 @@ import {MainMap} from "./components/Map/MainMap.jsx";
 export const App = () =>
   <AppContextProvider>
     <Logo/>
-    <SearchBar/>
+    <div className="row">
+        <SearchBar/>
+    </div>
     <MainMap />
     {/*<Table/>*/}
   </AppContextProvider>;
