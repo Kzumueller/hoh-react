@@ -13,4 +13,4 @@ RUN npm install -g serve
 
 RUN npm run build
 
-CMD ["serve", "./dist/", "-p", "5174"]
+CMD ["serve", "./dist/", "-p", "5173"]
