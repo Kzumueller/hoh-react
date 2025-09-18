@@ -16,8 +16,17 @@ body {
     max-width: 100dvw;
     min-height: 100vh;
     background: #666;
-    padding: 10px;
+    padding: 5px;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited, a:hover, a:focus {
+    color: blueviolet;
 }
 
 #root {
@@ -25,8 +34,8 @@ body {
     background: white;
     border-radius: 10px;
     border: 2px solid blueviolet;
-    padding: 20px;
-    height: calc(100dvh - 20px);
+    padding: 10px;
+    height: calc(100dvh - 10px);
     overflow-y: scroll;
 }
 
@@ -57,4 +66,18 @@ input {
 
 input:focus {
     outline: none;
+}
+
+.youtube, .youtube:visited {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: red;
+    text-decoration: none;
+    width: fit-content;
+    outline: none;
+}
+
+.youtube:hover {
+    color: darkred;
 }

@@ -1,0 +1,4 @@
+.row--headerBar {
+    justify-content: space-between;
+    align-items: flex-start;
+}

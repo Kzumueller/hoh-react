@@ -47,7 +47,7 @@ export const AppContextProvider = ({children}) => {
     ), [data, search]);
 
   const bounds = useMemo(() => {
-    if(filteredData?.length === 0) return [[10.7, 48], [12.5, 48.3]]
+    if(filteredData?.length === 0) return [[0, 0], [0, 0]]
 
     let maxLat = -90;
     let minLat = 90;

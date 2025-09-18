@@ -27,7 +27,7 @@ export const MainMap = () => {
     return () => map?.remove?.();
   }, []);
 
-  /*useLayoutEffect(() => {
+  useLayoutEffect(() => {
     const markers = [];
 
     // <img src="https://img.youtube.com/vi/${entry.watchId}/mqdefault.jpg" alt="thumbnail">
@@ -58,9 +58,9 @@ export const MainMap = () => {
     });
 
     return () => markers.forEach(marker => marker.remove())
-  }, [filteredData]);*/
+  }, [filteredData]);
 
-  useLayoutEffect(() => {
+  /*useLayoutEffect(() => {
     if(!map) return
 
     const listener = () => {
@@ -165,10 +165,10 @@ export const MainMap = () => {
         void map.removeSource('listings')
       } catch (error) {}
     }
-  }, [geoJson]);
+  }, [geoJson]);*/
 
   useLayoutEffect(() => {
-    if(map)
+    if(map && !(bounds.flatMap(array => array).every(entry => entry === 0)))
       map.fitBounds(bounds)
   }, [bounds])
 
