@@ -2,8 +2,7 @@ import {useCallback, useEffect, useMemo, useState} from "react";
 import {parse} from "csv-parse/browser/esm";
 import {AppContext} from "./AppContext.jsx";
 
-/** @type String */
-import csvURL from "../assets/data.csv?url";
+const csvURL = "https://www.h-o-h.net/data.csv"
 
 const columns = [
   "location",
